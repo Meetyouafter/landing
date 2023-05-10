@@ -1,0 +1,7 @@
+.wrapper {
+  background-color: red;
+  padding: 0;
+  @media screen and (min-width: '560px') {
+    background-color: gray;
+  }
+}
