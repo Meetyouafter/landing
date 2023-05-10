@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: green;
+  padding: 0;
+  @media screen and (min-width: '560px') {
+    background-color: rgb(135, 139, 161);
+  }
+}
+
+article {
+  height: 600px;
+}
+
+input {
+  color: red;
+  background-color: rgb(219, 165, 48);
+}

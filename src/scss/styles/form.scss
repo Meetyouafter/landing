@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 40%;
+  margin: 0 auto;
+
+  input {
+    border-radius: 8px;
+  }
+}
