@@ -1,7 +1,7 @@
-const wrapper = document.querySelector('.wrapper');
 const form = document.querySelector('.form');
+const header = document.querySelector('.header');
 
-wrapper.addEventListener('click', () => {
+header.addEventListener('click', () => {
   console.log(33);
 });
 
