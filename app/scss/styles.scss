@@ -1,5 +1,16 @@
-@import './resetStyles.scss';
+@import './styles/root/resetStyles';
+@import './styles/root/colors';
+@import './styles/root/fonts';
+@import './styles/root/root';
 
-@import './styles/header.scss';
-@import './styles/menu.scss';
-@import './styles/form.scss';
+@import './styles/navigation';
+@import './styles/header';
+@import './styles/about';
+@import './styles/slider';
+@import './styles/forum';
+@import './styles/test';
+@import './styles/vebinars';
+@import './styles/programms';
+@import './styles/go_test';
+@import './styles/participants';
+@import './styles/footer';

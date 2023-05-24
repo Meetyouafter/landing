@@ -1,0 +1,23 @@
+.participants {
+  &__container {
+    height: 400px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 70px;
+  }
+  &__title {
+    padding-bottom: 20px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+  }
+  &__content-description {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 20px;
+  }
+}

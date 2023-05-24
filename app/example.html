@@ -1,0 +1,55 @@
+<!-- регистрация -->
+
+Кнопка регистрации на воркшоп
+{{ include('@SmirikWebsite/Workshop/registration_button.html.twig') }}
+где при желании вы можете изменить стандартные тексты и опции:
+buttonText текст на кнопке регистрации (по умолчанию: "Зарегистрироваться")
+welcomeOnlineText текст при регистрации на воркшоп и хотя бы один вебинар (по умолчанию: "Спасибо за участие!")
+welcomeOfflineText текст на кнопке регистрации на воркшоп в офлайне (по умолчанию: "Мы ждем вас на мероприятии!")
+notSubscribedToWebinarText текст при регистрации на воркшоп, но без регистрации хоть на один вебинар (по умолчанию: "Вы уже зарегистрировались, но не составили свое расписание")
+registrationIsClosedText текст при закрытии регистрации (по умолчанию: "Регистрация закрыта")
+redirectUrl страница для редиректа. По умолчанию перебрасывает на эту же страницу
+
+<p class="main__paragraph-small">{{ include('@SmirikWebsite/Workshop/registration_button.html.twig', {buttonText: 'Авторизуйтесь,'}) }} чтобы принять участие в&nbsp;конкурсе.</p>
+
+
+Форма регистрации на воркшоп
+{{ include('@SmirikWebsite/Workshop/registration_form.html.twig') }}
+где при желании вы можете изменить стандартные тексты:
+offlineDescription описание офлайн регистрации (по умолчанию: "Как вы собираетесь зарегистрироваться?")
+onlineButtonText текст при регистрации на воркшоп онлайн (по умолчанию: "Буду участвовать онлайн")
+offlineButtonText текст на кнопке регистрации на воркшоп в офлайне (по умолчанию: "Приду на мерориятие")
+
+{{ include('@SmirikWebsite/Workshop/registration_form.html.twig') }}
+
+
+Блок с последними рейтинговыми действиями пользователей
+{{ include('@SmirikWebsite/Workshop/last_user_rating.html.twig', {'workshopId': workshop.id}) }}
+
+
+Блок с ближайшими вебинарами и онлайн эфирами выставки
+{{ include('@SmirikWebsite/Workshop/coming_soon.html.twig', {'eventsCount': 5}) }}
+где webinarsCount количество ближайших вебинаров/эфиров программы.
+При желании вы можете изменить стандартные тексты:
+comingSoonText текст на вкладке ближайших событий (по умолчанию: "Скоро онлайн")
+
+
+Блок с живой статистикой по просмотрам
+{{ include('@SmirikWebsite/Workshop/live_statistic.html.twig') }}
+
+
+Блок с предстоящим или уже идущим вебинаром
+{{ include('@SmirikWebsite/Workshop/current_webinar.html.twig', {id: workshop.id}) }}
+
+
+Форма тестирования
+Если устраивает стандартное оформление то подключаем так:
+{{ render(controller('SmirikWebsiteBundle:Widgets/Test:workshopTest', { workshopId: workshop.id, testId: 123 })) }}
+Если нужно своё оформление, то создаём его в отдельном файле по аналогии с src/Smirik/WebsiteBundle/Resources/public/js/workshop/test/elements.js при его подключении нужно указать тип module пример:
+<script type="module" src="bundles/smirikwebsite/js/workshop/test/custom/elements_132_4.js"></script>.
+При подключении такой формы нужно указать третий параметр, такой же как и первый параметр в фунции AppInit вашего кастомного оформления:
+{{ render(controller('SmirikWebsiteBundle:Widgets/Test:workshopTest', { workshopId: workshop.id, testId: 123, selector: 'my-custom-test' })) }}
+
+<section id="testing">
+  {{ render(controller('SmirikWebsiteBundle:Widgets/Test:workshopTest', { workshopId: workshop.id, testId: 370 })) }}
+</section>

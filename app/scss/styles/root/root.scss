@@ -1,0 +1,35 @@
+body {
+  font-family: "Inter-Regular";
+  color: $black;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 62.5%;
+  margin: 0 auto;
+}
+
+.article-title {
+  font-family: 'Inter-Medium';
+  font-size: 36px;
+  line-height: 43.57px;
+}
+
+.article-description {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.link {
+  color: $black;
+  text-decoration: none;
+}
+
+
+.svg-1-dims { width: 40px; height: 40px; }
+.svg-2-dims { width: 26px; height: 26px; }
+.svg-3-dims { width: 17px; height: 17px; }
+.svg-4-dims { width: 24px; height: 22px; }
+.svg-5-dims { width: 32px; height: 24px; }
+.svg-6-dims { width: 33px; height: 24px; }

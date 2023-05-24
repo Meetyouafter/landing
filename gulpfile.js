@@ -68,7 +68,7 @@ const scripts = () => src('app/js/main.js', { sourcemaps: isDev })
 
 const images = () => src(['app/assets/images/**/*.{jpg, jpeg, png, gif}'])
   .pipe(newer('dist/assets/images'))
-  .pipe(ifPlugin(isBuild, webp()))
+  .pipe(webp()) // no ifPlugin because <picture> doesn't show in dev mode
   .pipe(dest('dist/assets/images'))
 
   .pipe(src('app/assets/images/**/*.{jpg, jpeg, png, gif}'))
@@ -95,9 +95,7 @@ const sprite = () => src(['app/assets/icons/*.svg'])
       },
     },
   }))
-  .pipe(dest('dist/assets/images'));
-
-exports.sprite = sprite;
+  .pipe(dest('dist/assets/icons'));
 
 // Fonts
 
@@ -145,6 +143,7 @@ exports.build = series(
     fonts,
     html,
     scripts,
+    sprite,
     svg,
   ),
 );
@@ -159,6 +158,7 @@ exports.default = series(
     fonts,
     html,
     scripts,
+    sprite,
     svg,
   ),
   watching,
