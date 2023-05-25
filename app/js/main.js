@@ -1,18 +1,24 @@
-const form = document.querySelector('.form');
 const header = document.querySelector('.header');
 
-header.addEventListener('click', () => {
-  console.log(33);
-});
+let slide = 1;
 
-function serializeForm(formNode) {
-  return new FormData(formNode);
-}
-
-const handleFormSubmit = (e) => {
-  e.preventDefault();
-  const formData = serializeForm(form);
-  console.log(Object.fromEntries(formData));
-};
-
-form.addEventListener('submit', handleFormSubmit);
+setInterval(() => {
+  if (slide === 1) {
+    header.classList.remove('header__background--image1');
+    header.classList.add('header__background--image2');
+    slide = 2;
+    return slide;
+  }
+  if (slide === 2) {
+    header.classList.remove('header__background--image2');
+    header.classList.add('header__background--image3');
+    slide = 3;
+    return slide;
+  }
+  if (slide === 3) {
+    header.classList.remove('header__background--image3');
+    header.classList.add('header__background--image1');
+    slide = 1;
+    return slide;
+  }
+}, 3000);

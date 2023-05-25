@@ -1,22 +1,61 @@
 .header {
-  background-color: #ECECEC;
-  height: 700px;
+  background-color: #ececec;
+  background-size: cover;
   position: relative;
-  &__container {
+  height: 55.556vw;
+  z-index: -2;
+  &__background--image1 {
+    background-image: url(/assets/images/header/slide1.jpg);
+  }
+  &__background--image2 {
+    background-image: url(/assets/images/header/slide2.jpg);
+  }
+  &__background--image3 {
+    background-image: url(/assets/images/header/slide3.jpg);
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 9.083%;
+  }
+  &__nav-logo {
+    width: 17%;
+  }
+  &__nav-list {
+    width: 75%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3.92%;
+  }
+  &__nav-list-item {
+    list-style: none;
+    text-align: center;
+    a {
+      font-size: 1rem;
+      color: $white;
+      text-decoration: none;
+    }
   }
   &__content {
     position: absolute;
-    top: 507px;
+    top: 38.26vw;
   }
   &__title {
-    font-family: 'Inter-Bold';
-    font-size: 50px;
-    line-height: 61px;
-    text-transform: uppercase;
-    padding-bottom: 40px;
+    font-family: 'Manrope-Bold';
+    font-size: 4.75rem;
+    padding-bottom: 0.75rem;
   }
   &__description {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5rem;
+  }
+  &__image-heart {
+    width: 34.9315%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
 }

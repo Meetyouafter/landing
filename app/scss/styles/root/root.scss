@@ -1,17 +1,26 @@
+:root,
+html {
+  font-size: 1.11111111vw; // 16px for 1440
+}
+
 body {
-  font-family: "Inter-Regular";
-  color: $black;
+  position: relative;
   margin: 0 auto;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: 'Manrope-Regular';
+  line-height: 1.36579;
+  color: $white;
+  background-color: $red;
 }
 
 .container {
-  max-width: 1200px;
-  width: 62.5%;
+  width: 83.333333%; // 1200 for 1440
   margin: 0 auto;
 }
 
 .article-title {
-  font-family: 'Inter-Medium';
+  font-family: 'Manrope-Medium';
   font-size: 36px;
   line-height: 43.57px;
 }
@@ -26,10 +35,27 @@ body {
   text-decoration: none;
 }
 
-
-.svg-1-dims { width: 40px; height: 40px; }
-.svg-2-dims { width: 26px; height: 26px; }
-.svg-3-dims { width: 17px; height: 17px; }
-.svg-4-dims { width: 24px; height: 22px; }
-.svg-5-dims { width: 32px; height: 24px; }
-.svg-6-dims { width: 33px; height: 24px; }
+.svg-1-dims {
+  width: 40px;
+  height: 40px;
+}
+.svg-2-dims {
+  width: 26px;
+  height: 26px;
+}
+.svg-3-dims {
+  width: 17px;
+  height: 17px;
+}
+.svg-4-dims {
+  width: 24px;
+  height: 22px;
+}
+.svg-5-dims {
+  width: 32px;
+  height: 24px;
+}
+.svg-6-dims {
+  width: 33px;
+  height: 24px;
+}
