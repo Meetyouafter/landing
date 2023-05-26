@@ -1,32 +1,26 @@
 .test {
-  &__container {
-    padding-bottom: 150px;
+  background-size: cover;
+  position: relative;
+  height: 55.556vw;
+  background-image: url(/assets/images/test/background.jpg);
+  &__button {
+    background-color: $dirty-blue;
+    width: 276px;
+    height: 54px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Manrope-Bold';
+    color: $white;
+    margin-top: 2.52rem;
   }
-  &__points {
-    padding-top: 74px;
-    padding-bottom: 68px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 202px;
+  &__content {
+    width: 51%;
+    padding-top: 27.216rem;
   }
-  &__point {
-    display: flex;
-    flex-direction: column;
+  &__content-title {
+    padding-bottom: 1.512rem;
   }
-  &__point-count {
-    font-size: 50px;
-    line-height: 61px;
-    span {
-      font-size: 12px;
-      line-height: 15px;
-      position: absolute;
-    }
-  }
-  &__point-description {
-    width: 70%;
-    text-align: center;
-    font-size: 16px;
-    line-height: 19px;
+  &__content-description {
+    padding-bottom: 0.756rem;
   }
 }
