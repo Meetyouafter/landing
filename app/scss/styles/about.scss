@@ -1,52 +1,79 @@
 .about {
   &__container {
-    padding: 150px 0 70px 0;
+    padding: 5.04rem 0 5.035rem 0;
   }
   &__title {
-    padding-bottom: 69px;
+    padding-bottom: 1.512rem;
+    width: 75%;
   }
   &__description {
-    font-size: 18px;
-    line-height: 22px;
+    width: 57%;
     padding-bottom: 30px;
   }
-  &__content {
+  &__cards {
     display: flex;
-    align-items: flex-start;
+    gap: 1.89rem;
+    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 2.5%;
+    padding-bottom: 5.04rem;
   }
-  &__left-side {
-    width: 39.6%;
-  }
-  &__right-side {
-    width: 33.4%;
-  }
-  &__list-description {
-    font-size: 24px;
-    line-height: 29px;
-    padding-bottom: 15px;
-  }
-  &__list {
-    font-size: 18px;
-    line-height: 22px;
-    list-style-type: '—';
-    padding: 0;
-    li {
-      list-style-position: inside;
-      font-size: 18px;
-      line-height: 22px;
-      padding-top: 15px;
+  &__card {
+    width: 31.5%;
+    height: 9.576rem;
+    background: $white;
+    border-radius: 6px;
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    p {
+      width: 73.312%;
+      color: $dark-violet;
+      font-size: 1.1134rem;
+    }
+    span {
+      position: absolute;
+      color: $white;
+      top: 0.504rem;
+      right: 0.504rem;
+      font-size: 1.134rem;
+      z-index: 1;
     }
   }
-  &__picture-one {
-    width: 475px;
-    height: 262px;
-    background: $light-gray;
+  &__card::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-left: 4.536rem solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 4.536rem solid $dark-red;
+    border-radius: 0 5px 0 0;
   }
-  &__picture-two {
-    height: 425px;
-    width: 250px;
-    background: $light-gray;
+  &__second-title {
+    width: 72.583%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 3.78rem;
+  }
+  &__picture-container {
+    display: flex;
+    column-gap: 2.5%;
+    width: 135%;
+  }
+  &__picture-block {
+    position: relative;
+    p {
+      font-size: 1.26rem;
+      position: absolute;
+      bottom: 2.016rem;
+      left: 2.016rem;
+    }
+  }
+  &__picture {
+    width: 23.814rem;
+    height: 27.032rem;
+    border-radius: 16px;
   }
 }
