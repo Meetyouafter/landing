@@ -1,4 +1,6 @@
 const header = document.querySelector('.header');
+let currentButton = document.querySelector('.shedule__shedule-button--active');
+const shedule = document.querySelector('.shedule__shedule');
 
 let slide = 1;
 
@@ -22,3 +24,17 @@ setInterval(() => {
     return slide;
   }
 }, 3000);
+
+const toogleButtonToActive = (buttonEl) => {
+  if (currentButton !== buttonEl) {
+    currentButton.classList.remove('shedule__shedule-button--active');
+    currentButton = buttonEl;
+    currentButton.classList.add('shedule__shedule-button--active');
+  }
+};
+
+shedule.onclick = (event) => {
+  const { target } = event;
+  if (target.tagName !== 'BUTTON') return;
+  toogleButtonToActive(target);
+};

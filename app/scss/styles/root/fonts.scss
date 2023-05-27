@@ -55,6 +55,14 @@
 }
 
 @font-face {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/Inter-Regular.woff2) format('woff2'),
+    url(/assets/fonts/Inter-Regular.woff) format('woff');
+}
+
+@font-face {
   font-family: 'Inter-Light';
   font-style: normal;
   font-weight: 300;

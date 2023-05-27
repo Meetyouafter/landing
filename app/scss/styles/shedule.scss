@@ -1,49 +1,6 @@
 .shedule {
   background-color: $dirty-blue;
-  height: 45.171vw;
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__description {
-    font-size: 20px;
-    line-height: 140%;
-    width: 57%;
-    text-align: center;
-  }
-  &__points {
-    padding-top: 64px;
-    padding-bottom: 79px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  &__point {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &__point-count {
-    font-size: 90px;
-    line-height: 109px;
-    span {
-      font-size: 14px;
-      line-height: 17px;
-      position: absolute;
-    }
-  }
-  &__point-description {
-    width: 70%;
-    text-align: center;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-
-
+  height: 45.171rem;
   &__title {
     padding-top: 5.04rem;
     padding-bottom: 1.512rem;
@@ -54,87 +11,89 @@
     align-items: center;
     padding-bottom: 2.52rem;
   }
-    &__shedule-button {
-      color: $white;
-      font-size: 1rem;
-      height: 2.898rem;
-      min-width: 8.1666%;
-      border: 1px solid #ffffff;
-      border-radius: 30px;
-      background-color: transparent;
-      cursor: pointer;
+  &__shedule-button {
+    color: $white;
+    font-size: 1rem;
+    height: 2.898rem;
+    min-width: 8.1666%;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__shedule-button--active {
+    background-color: $white;
+    color: $dirty-blue;
+    font-family: 'Manrope-Bold';
+  }
+  &__vebinar-header {
+    border: 2px solid $white;
+    border-radius: 16px 16px 0px 0px;
+    background-color: transparent;
+    color: $white;
+    height: 3.78rem;
+    font-size: 1.26rem;
+    font-family: 'Manrope-Bold';
+    padding-left: 3.333%;
+    display: flex;
+    align-items: center;
+  }
+  &__vebinar-body {
+    background-color: $white;
+    color: $black;
+    padding: 3.276rem 2.52rem 3.81654rem 2.52rem;
+    border: 2px solid $white;
+    border-radius: 0px 0px 16px 16px;
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 4.977rem;
+      &-content {
+        width: 41.013rem;
+      }
     }
-    &__shedule-button--active {
-      background-color: $white;
-      color: $dirty-blue;
-    }
-
-
-
-
-
-    &__vebinar-header {
-      border: 2px solid $white;
-      border-radius: 16px 16px 0px 0px;
-      background-color: transparent;
-      color: $white;
-      height: 3.78rem;
+    &-title {
       font-size: 1.26rem;
-      font-family: "Manrope-Bold";
-      padding-left: 3.333%;
+      font-family: 'Manrope-Regular';
+      padding-bottom: 1rem;
+    }
+    &-programm {
+      font-family: 'Manrope-Bold';
+      color: $orange;
+    }
+    &-link {
+      font-family: 'Manrope-Regular';
+      color: $white;
       display: flex;
       align-items: center;
-    }
-
-    &__vebinar-body {
-      background-color: $white;
-      color: $black;
-      padding: 3.276rem 2.52rem 3.81654rem 2.52rem;
-      border: 2px solid $white;
-      border-radius: 0px 0px 16px 16px;
-      &-title {
-        font-size: 1.26rem;
-      }
-      &-programm {
-        font-family: "Manrope-Bold";
-        color: $orange;
-      }
-      &-link {
-        font-family: "Manrope-Bold";
-        color: $white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 14.805rem;
-        height: 3.402rem;
-        background: $orange;
-        border-radius: 16px;
-        span {
-          font-size: 0.882rem;
-        }
+      justify-content: center;
+      width: 14.805rem;
+      height: 3.402rem;
+      background: $orange;
+      border-radius: 16px;
+      span {
+        font-size: 0.882rem;
+        font-family: 'Manrope-Light';
       }
     }
-
-
-
-
-    &__author {
-      display: flex;
-      align-items: flex-start;
-      column-gap: 1.008rem;
-      width: 20.17857%;
-    }
-    &__author-avatar {
-      width: 5.926rem;
-      border-radius: 50%;
-    }
-    &__author-name {
-      font-size: 0.882rem;
-      font-family: "Inter-Bold";
-      padding-bottom: 0.504rem;
-    }
-    &__author-post {
-      font-size: 0.756rem;
-      font-family: "Inter-Light";
-    }
+  }
+  &__author {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.008rem;
+    width: 20.17857%;
+  }
+  &__author-avatar {
+    width: 5.926rem;
+    border-radius: 50%;
+  }
+  &__author-name {
+    font-size: 0.882rem;
+    font-family: 'Inter-Bold';
+    padding-bottom: 0.504rem;
+  }
+  &__author-post {
+    font-size: 0.756rem;
+    font-family: 'Inter-Regular';
+  }
 }
