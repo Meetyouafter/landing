@@ -1,4 +1,20 @@
 @font-face {
+  font-family: 'Manrope-ExtraLight';
+  font-style: normal;
+  font-weight: 200;
+  src: url(/assets/fonts/Manrope-ExtraLight.woff2) format('woff2'),
+    url(/assets/fonts/Manrope-ExtraLight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Manrope-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/fonts/Manrope-Light.woff2) format('woff2'),
+    url(/assets/fonts/Manrope-Light.woff) format('woff');
+}
+
+@font-face {
   font-family: 'Manrope-Regular';
   font-style: normal;
   font-weight: 400;
@@ -15,9 +31,33 @@
 }
 
 @font-face {
+  font-family: 'Manrope-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/assets/fonts/Manrope-SemiBold.woff2) format('woff2'),
+    url(/assets/fonts/Manrope-SemiBold.woff) format('woff');
+}
+
+@font-face {
   font-family: 'Manrope-Bold';
   font-style: normal;
   font-weight: 700;
   src: url(/assets/fonts/Manrope-Bold.woff2) format('woff2'),
     url(/assets/fonts/Manrope-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/fonts/Inter-Bold.woff2) format('woff2'),
+    url(/assets/fonts/Inter-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/fonts/Inter-Light.woff2) format('woff2'),
+    url(/assets/fonts/Inter-Light.woff) format('woff');
 }

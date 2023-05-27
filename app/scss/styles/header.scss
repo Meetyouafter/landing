@@ -17,7 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 9.083%;
+    column-gap: 6.426rem;
+    padding: 1.386rem 2.52rem 0 2.52rem;
   }
   &__nav-logo {
     width: 17%;
@@ -27,8 +28,8 @@
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 3.92%;
+    justify-content: flex-start;
+    column-gap: 1.701rem;
   }
   &__nav-list-item {
     list-style: none;
@@ -38,6 +39,25 @@
       color: $white;
       text-decoration: none;
     }
+  }
+  &__nav-list-item:last-child {
+    flex-grow: 1;
+    text-align: end;
+    position: relative;
+  }
+  &__nav-list-item:last-child::before {
+    content: '';
+    width: 2.016rem;
+    height: 2.016rem;
+    border: 2px solid $white;
+    border-radius: 50%;
+    position: absolute;
+    left: 5.5rem;
+    top: -0.35rem;
+    background-image: url('/assets/images/header/fi_user.svg');
+    background-repeat: no-repeat;
+    background-size: 83%;
+    background-position: center;
   }
   &__content {
     position: absolute;
@@ -55,7 +75,7 @@
     width: 34.9315%;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -13rem;
     z-index: -1;
   }
 }

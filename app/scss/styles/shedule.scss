@@ -7,12 +7,7 @@
     flex-direction: column;
     align-items: center;
   }
-  &__title {
-    padding-top: 75px;
-    padding-bottom: 40px;
-    font-size: 24px;
-    line-height: 110%;
-  }
+
   &__description {
     font-size: 20px;
     line-height: 140%;
@@ -46,11 +41,17 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+
+
+  &__title {
+    padding-top: 5.04rem;
+    padding-bottom: 1.512rem;
+  }
   &__shedule {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 1.512rem;
     padding-bottom: 2.52rem;
   }
     &__shedule-button {
@@ -66,5 +67,74 @@
     &__shedule-button--active {
       background-color: $white;
       color: $dirty-blue;
+    }
+
+
+
+
+
+    &__vebinar-header {
+      border: 2px solid $white;
+      border-radius: 16px 16px 0px 0px;
+      background-color: transparent;
+      color: $white;
+      height: 3.78rem;
+      font-size: 1.26rem;
+      font-family: "Manrope-Bold";
+      padding-left: 3.333%;
+      display: flex;
+      align-items: center;
+    }
+
+    &__vebinar-body {
+      background-color: $white;
+      color: $black;
+      padding: 3.276rem 2.52rem 3.81654rem 2.52rem;
+      border: 2px solid $white;
+      border-radius: 0px 0px 16px 16px;
+      &-title {
+        font-size: 1.26rem;
+      }
+      &-programm {
+        font-family: "Manrope-Bold";
+        color: $orange;
+      }
+      &-link {
+        font-family: "Manrope-Bold";
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 14.805rem;
+        height: 3.402rem;
+        background: $orange;
+        border-radius: 16px;
+        span {
+          font-size: 0.882rem;
+        }
+      }
+    }
+
+
+
+
+    &__author {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 1.008rem;
+      width: 20.17857%;
+    }
+    &__author-avatar {
+      width: 5.926rem;
+      border-radius: 50%;
+    }
+    &__author-name {
+      font-size: 0.882rem;
+      font-family: "Inter-Bold";
+      padding-bottom: 0.504rem;
+    }
+    &__author-post {
+      font-size: 0.756rem;
+      font-family: "Inter-Light";
     }
 }
