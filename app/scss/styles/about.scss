@@ -5,63 +5,48 @@
   }
   &__title {
     padding-bottom: 1.512rem;
-    width: 75%;
+    width: 85%;
   }
   &__description {
-    width: 57%;
-    padding-bottom: 30px;
+    width: 75%;
+    padding-bottom: 6.3rem;
   }
-  &__cards {
-    display: flex;
-    gap: 1.89rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 5.04rem;
+  &__secont-title {
+    font-size: 4.536rem;
   }
-  &__card {
-    width: 31.5%;
-    height: 9.576rem;
-    background: $white;
-    border-radius: 6px;
-    padding-left: 2%;
+  &__project {
     display: flex;
     align-items: center;
+    padding-bottom: 18.522rem;
     position: relative;
-
-    p {
-      width: 73.312%;
-      color: $dark-violet;
-      font-size: 1.1134rem;
-    }
-    span {
-      position: absolute;
-      color: $white;
-      top: 0.504rem;
-      right: 0.504rem;
-      font-size: 1.134rem;
-      z-index: 1;
-    }
-  }
-  &__card::after {
-    content: '';
+  &-line {
+    background-image: url('/assets/images/about/line_first.svg');
+    background-repeat: no-repeat;
+    width: 120%;
+    height: 650px;
+    left: -7.5rem;
     position: absolute;
-    top: -2px;
-    right: -2px;
-    border-left: 4.536rem solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 4.536rem solid $dark-red;
-    border-radius: 0 5px 0 0;
+  }
+}
+
+  &__project-list {
+    font-size: 1.26rem;
+    li {
+      padding-bottom: 0.756rem;
+    }
   }
   &__second-title {
-    width: 72.583%;
+    width: 72.58333%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 3.78rem;
   }
+
+
+
   &__picture-container {
     display: flex;
     column-gap: 2.5%;
-    width: 135%;
   }
   &__picture-block {
     position: relative;
