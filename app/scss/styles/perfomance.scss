@@ -1,0 +1,91 @@
+.perfomance {
+  background-color: $dirty-blue;
+  z-index: -2;
+  position: relative;
+  &__line {
+    z-index: -1;
+    position: absolute;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3.78rem;
+  }
+  &__title {
+    width: 66%;
+  }
+  &__button {
+    padding: 1rem 1.9215rem;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    color: $white;
+  }
+  &__blocks {
+    display: grid;
+    grid-template-columns: 17.388rem 17.388rem 36.666rem;
+    grid-template-rows: 12.6rem 11.34rem 11.34rem;
+    gap: 1.89rem;
+  }
+  &__block {
+    background-color: $white;
+    color: #0e0e0e;
+    border-radius: 16px;
+    font-size: 1.26rem;
+    padding: 1.512rem 4.536rem 0 1.512rem;
+
+    &--big-text {
+      grid-column: 1 / 3;
+    }
+    &--picture {
+      grid-row: 2/4;
+      grid-column: 3/4;
+      background-image: url('/assets/images/perfomance/show.jpg');
+      background-position: center;
+      background-size: contain;
+    }
+    &--test {
+      background-color: $red;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.764rem;
+      text-align: center;
+    }
+    &--points-block {
+      padding: 0 3.087rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        text-align: center;
+      }
+    }
+    &-point {
+      font-family: 'Manrope-Bold';
+      font-size: 4.032rem;
+      text-align: center;
+      color: $red;
+      position: relative;
+    }
+    &-point::after {
+      content: 'б';
+      width: 1.764rem;
+      height: 1.764rem;
+      font-family: 'Manrope-Bold';
+      font-size: 1rem;
+      color: $white;
+      position: absolute;
+      top: 0;
+      right: -1.5rem;
+      background-color: $red;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
