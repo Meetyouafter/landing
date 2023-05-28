@@ -1,0 +1,26 @@
+.vebinars {
+  background-image: url('/assets/images/vebinars/photo.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 64.6rem;
+  &__container {
+    padding-top: 36.918rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left-container {
+    width: 50%;
+  }
+  &__right-container {
+    display: flex;
+    column-gap: 4.032rem;
+  }
+  &__points-block {
+    @include points($white, transparent, $white, $white, transparent);
+    padding: 0;
+      //  ($textColor, $bgColor, $countColor, $afterTextColor, $afterBgColor)
+;
+  }
+}
