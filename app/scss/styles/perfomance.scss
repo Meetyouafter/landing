@@ -3,7 +3,7 @@
   z-index: -2;
   position: relative;
   height: 65rem;
-  border-radius: 10% 10% 62% 27%/10% 10% 20% 13%;
+  border-radius: 64% 44% 72% 34%/21% 14% 23% 14%;
   &__line {
     z-index: -1;
     position: absolute;
@@ -13,6 +13,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 6.426rem 0 3.78rem 0;
+  }
+  &__header::before {
+    content: "";
+    width: 10rem;
+    height: 8rem;
+    position: absolute;
+    background-color: $dirty-blue;
+    left: -1rem;
+    z-index: -4;
+    border-radius: 34% 0 0 0;
   }
   &__title {
     width: 68%;
