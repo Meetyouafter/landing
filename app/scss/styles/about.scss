@@ -1,7 +1,7 @@
 .about {
-    overflow: hidden;
+  overflow: hidden;
   &__container {
-    padding: 5.04rem 0 5.035rem 0;
+    padding: 5.04rem 0 5.544rem 0;
   }
   &__title {
     padding-bottom: 1.512rem;
@@ -11,26 +11,30 @@
     width: 75%;
     padding-bottom: 6.3rem;
   }
-  &__secont-title {
+  &__project-title {
     font-size: 4.536rem;
+    font-family: 'Manrope-ExtraBold';
+    text-transform: uppercase;
   }
   &__project {
     display: flex;
     align-items: center;
     padding-bottom: 18.522rem;
     position: relative;
-  &-line {
-    background-image: url('/assets/images/about/line_first.svg');
-    background-repeat: no-repeat;
-    width: 120%;
-    height: 650px;
-    left: -7.5rem;
-    position: absolute;
+    &-line {
+      top: -3rem;
+      background-image: url(/assets/images/about/line_first.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 120%;
+      height: 42rem;
+      left: -7.5rem;
+      position: absolute;
+    }
   }
-}
-
   &__project-list {
     font-size: 1.26rem;
+    font-family: 'Manrope-SemiBold';
     li {
       padding-bottom: 0.756rem;
     }
@@ -41,18 +45,18 @@
     text-align: center;
     padding-bottom: 3.78rem;
   }
-
-
-
   &__picture-container {
     display: flex;
     column-gap: 2.5%;
+    width: 134%;
   }
   &__picture-block {
     position: relative;
     p {
       font-size: 1.26rem;
+      font-family: 'Manrope-ExtraLight';
       position: absolute;
+      text-align: start;
       bottom: 2.016rem;
       left: 2.016rem;
     }

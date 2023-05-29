@@ -47,6 +47,14 @@
 }
 
 @font-face {
+  font-family: 'Manrope-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url(/assets/fonts/Manrope-ExtraBold.woff2) format('woff2'),
+    url(/assets/fonts/Manrope-ExtraBold.woff) format('woff');
+}
+
+@font-face {
   font-family: 'Inter-Bold';
   font-style: normal;
   font-weight: 700;

@@ -1,26 +1,30 @@
 .vebinars {
   background-image: url('/assets/images/vebinars/photo.jpg');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 64.6rem;
+  position: relative;
+  z-index: -3;
   &__container {
-    padding-top: 36.918rem;
+    padding-top: 47.918rem;
+    margin-top: -11rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
   }
   &__left-container {
     width: 50%;
+    display: flex;
+    row-gap: 1.512rem;
+    flex-direction: column;
   }
   &__right-container {
     display: flex;
-    column-gap: 4.032rem;
+    width: 36%;
   }
   &__points-block {
     @include points($white, transparent, $white, $white, transparent);
     padding: 0;
-      //  ($textColor, $bgColor, $countColor, $afterTextColor, $afterBgColor)
-;
   }
 }
